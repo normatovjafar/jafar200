@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <style>
+      body{
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }   
+      #main{
+        height: 50px;
+        width: 120px;
+        border: 2px  solid black;
+        overflow: hidden;
+        position:relative ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .dot{
+        display: inline-block;
+        height: 50px;
+        width: 60px;
+        background-color: black;
+        position: absolute;
+        animation: slide 1s linear infinite;
+      }@keyframes slide{
+        from{
+            transform: translate(-25) ;
+        }
+        to{
+            transform: translate(2px)
+        }
+      }
+    </style>
+    <div id="main">
+        <span class="dot"></span>
+    </div>
+</body>
+</html>
